@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta charset="UTF-8"> 
+	<title>Forma de Logeo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="estilo_forma.css"/>
+</head>
+<body>
+<!--<div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post" style="margin-bottom: 9%;">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avatar.jpg" alt="Avatar" class="avatar lazy">
+    </div>
+    <div class="container">
+      <label for="uname"><b>Nombre de Usuario</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button class="_button_" type="submit">Conectate</button>
+      <button class="_button_" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+      <span class="psw">Olvide Contraseña <a href="#">password?</a></span>
+      <label style="color: black;">
+        <input type="checkbox" checked="checked" name="remember">Recordar Contraseña
+      </label>
+    </div>
+    <!--<div class="container" style="background-color:#f1f1f1">
+      <button class="_button_" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+      <span class="psw">Olvide Contraseña <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>-->
+
+<div class="cuerpo">
+	<div class="container">
+	<div clas="contenedor_logeo">
+		<div class="blueBG">
+			<div class="box signin">
+				<h2>Ya tienes cuenta ?</h2>
+				<button class="signinBtn">Entrar</button>
+			</div>
+			
+			<div class="box signup">
+				<h2>Aun no tienes Cuenta ?</h2>
+				<button class="signupBtn">Registrate</button>
+			</div>
+			
+		</div>
+			
+			<div class="formBx">
+				<div class="form signinForm">
+				<form>
+					<h3>Hola, Conectate</h3>
+					<input type="text" placeholder="nombreDusuario">
+					<input type="password" placeholder="contraseña">
+					<input type="submit" value="entrar">
+					<a href="#" class="forgot">Olvidaste la contraseña ?</a>
+				</form>
+			</div>
+			
+			<div class="form signupForm">
+				<form>
+					<h3>Hola, Registrate Gratis para mejores precios</h3>
+					<input type="text" placeholder="nombreDusuario">
+					<input type="text" placeholder="Correo Electronico">
+					<input type="password" placeholder="contraseña">
+					<input type="password" placeholder="Confirmar contraseña">
+					<input type="submit" value="Registrar">
+				</form>
+			</div>
+			</div>
+		
+	</div>
+</div>
+<script>
+		const signinBtn = document.querySelector('.signinBtn');
+		const signupBtn = document.querySelector('.signupBtn');
+		const formBx = document.querySelector('.formBx');
+		const cuerpo = document.querySelector('.cuerpo');
+		
+		signupBtn.onclick = function(){
+			formBx.classList.add('active');
+			cuerpo.classList.add('active');
+		}
+		signinBtn.onclick = function(){
+			formBx.classList.remove('active');
+			cuerpo.classList.remove('active');
+		}
+	</script>
+</div>
+</body>
+</html>
+<!--
+@media(max-width: 991px){
+			.contenedor_logeo{
+				max-width: 400px;
+				height: 650px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.contenedor_logeo .blueBG{
+				top: 0;
+				height: 100%;
+			}
+			.formBx{
+				width: 100%;
+				height: 500px;
+				top: 0;
+				box-shadow: none;
+			}
+			.blueBG .box{
+				position: absolute;
+				width: 100%;
+				height: 150px;
+				bottom: 0;
+			}
+			.box.signin{
+				top: 0;
+			}
+			.formBx.active{
+				left: 0;
+				top: 150px;
+			}
+		}
+-->

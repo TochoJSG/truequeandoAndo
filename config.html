@@ -1,0 +1,178 @@
+<!DOCTYPE html5>
+<html lang="es">
+	<head>
+		<meta http-equiv="content-security-policy|Content-Type|default-style|refresh" content="text/html; width=device-width; charset=utf-8;" initial-scale="1.0"/>
+		<title>Configuraciones</title>
+		<link rel="shortcut icon|apple-touch-icon|apple-touch-icon-precomposed" href="favicon.ico" sizes="HeightxWidth|any" type="image/x-icon"/>
+		<meta charset="UTF-8"> 
+		<meta name="author" content="Jorge" />
+		<meta name="copyright" content="Propietario del copyright" />	
+        <link href="estilo.css"  rel="stylesheet" type="text/css"/>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
+	    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>	
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+<body>
+<div class="configuraciones">
+	<div>
+	<h2>Animated Collapsibles</h2>
+	<button class="collapsible">Open Collapsible</button>
+	<div class="contentColla">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+	<button class="collapsible">Open Section 1</button>
+	<div class="contentColla">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+	<button class="collapsible">Open Section 2</button>
+	<div class="contentColla">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+	<button class="collapsible">Open Section 3</button>
+	<div class="contentColla">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>	
+	<button class="collapsible">Open Section 3</button>
+	<div class="contentColla">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>	
+	<button class="collapsible">Open Section 3</button>
+	<div class="contentColla">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>	
+	<button class="collapsible">Open Section 3</button>
+	<div class="contentColla">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>	
+	<button class="collapsible">Open Section 3</button>
+	<div class="contentColla">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>	
+	
+    </div>
+
+    <div>
+	<div class="cardISocial">
+		<div class="topCard">
+			<div class="userDetails">
+				<div class="profileImg">
+				<img src="logo.jpg" class="cover"/>
+				</div>
+				<h3>Tocha<br><span>CDMX, Iztapalapa</span></h3>
+			</div>
+			<div>
+			<img src="dot.png" class="dot"/><!--3 puntitos-->
+			</div>
+		</div>
+		<div class="actionBtns">
+			<div class="left">
+				<img src="heart.png" class="heart" onclick="likeButton()"/>
+				<img src="comment.png"/>
+				<img src="share.png"/>
+			</div>
+			<div class="right">
+				<img src="bookmark.png"/>
+			</div>
+		</div>
+		<h4 class="likes">3,684</h4>
+		<h4 class="messages"><b>Tocha</b>Gracias por dedicarnos tiempo<span>#cards</span><span>#html</span><span>#css</span>
+			</h4>
+		<h4 class="comments">View all 245 comments</h4>
+		<div class="addComments">
+			<div class="userImg">
+				<img src="user.jpg" class="cover"/>
+			</div>
+			<input type="text" class="text" placeholder="Agrega tu comentario por favor..."/>
+		</div>
+		<h5 class="postTime">4 hours ago</h5>
+	</div>
+	
+	</div>
+	
+</div>	
+<script>
+	function likeButton(){
+		let heart = document.querySelector('.heart');
+		let likes = document.querySelector('.likes');
+		if(heart.src.match('heart.png')){
+			heart.src = 'heart_red.png'; 
+			likes.innerHTML = '3,685';
+		}else{heart.src = 'heart.png'; likes.innerHTML = '3,684'; }
+	}
+</script>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("activeCol");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+<div class="publicaciones">
+	<div class="publicacion">
+		<div class="imgArticulo">
+			<img src="publicaciones/art9.png" alt="cargando imagen de articulo"/>
+		</div>
+		<div class="detalles">
+		<div class="usuarioOferta">
+			<h2>Publicacion {<span>Nombre Producto </span>} editar   <i class="fa fa-ellipsis-v" aria-hidden="true"></i></h2>
+			<button class="btn btn-primary">Promocionar mas <i class="fa fa-flag" aria-hidden="true"></i></button>
+			<button class="btn btn-success">Ayuda <i class="fa fa-info-circle" aria-hidden="true"></i></button>
+			<button class="btn btn-info">Sugerencias <i class="fa fa-eye" aria-hidden="true"></i></button>
+			</h2>
+		</div>
+		</div>	
+	</div>
+</div>
+<div class="publicaciones">
+	<div class="publicacion">
+		<div class="imgArticulo">
+			<img src="publicaciones/art1.png" alt="cargando imagen de articulo"/>
+		</div>
+		<div class="detalles">
+		<div class="usuarioOferta">
+			<h2>Publicacion {<span>Nombre Producto </span>} editar   <i class="fa fa-ellipsis-v" aria-hidden="true"></i></h2>
+			<button class="btn btn-primary">Promocionar mas <i class="fa fa-flag" aria-hidden="true"></i></button>
+			<button class="btn btn-success">Ayuda <i class="fa fa-info-circle" aria-hidden="true"></i></button>
+			<button class="btn btn-info">Sugerencias <i class="fa fa-eye" aria-hidden="true"></i></button>
+			</h2>
+		</div>
+		</div>	
+	</div>
+</div>
+<div class="publicaciones">
+	<div class="publicacion">
+		<div class="imgArticulo">
+			<img src="publicaciones/art6.png" alt="cargando imagen de articulo"/>
+		</div>
+		<div class="detalles">
+		<div class="usuarioOferta">
+			<h2>Publicacion {<span>Nombre Producto </span>} editar   <i class="fa fa-ellipsis-v" aria-hidden="true"></i></h2>
+			<button class="btn btn-primary">Promocionar mas <i class="fa fa-flag" aria-hidden="true"></i></button>
+			<button class="btn btn-success">Ayuda <i class="fa fa-info-circle" aria-hidden="true"></i></button>
+			<button class="btn btn-info">Sugerencias <i class="fa fa-eye" aria-hidden="true"></i></button>
+			</h2>
+		</div>
+		</div>	
+	</div>
+</div>
+
+<section id="navegacion" class="navegacionMain">
+	<div class="navegacionContenido">
+		<div><a target="_self" href="index.html"><img class="imgMenu" src="navegar.png" alt="loading..."/></a></div>
+		<div><a target="_self" href="swipear.html"><img class="imgMenu" src="swippear.png" alt="loading..."/></a></div>
+		<div><a target="_self" href="matchs.html"><img class="imgMenu" src="interesados.png" alt="loading..."/></a></div>
+		<div><a target="_self" href="chats.html"><img class="imgMenu" src="chat.png" alt="loading..."/></a></div>
+		<div><a target="_self" href="config.html"><img class="imgMenu" src="config.png" alt="loading..."/></a></div>
+	</div>
+</section>
+</body>
+</html>

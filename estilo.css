@@ -49,35 +49,12 @@ nav .inputBox::placeholder{color:#999;}
 .navigation .toggle span{position:relative;width:20px;height:50px;}
 .navigation .toggle span:before{content:'';position:absolute;top:20px;left:0;width:100%;height:2px;background:#fff;transition:0.5s;}
 .navigation .toggle span::after{content:'';position:absolute;bottom:20px;left:0;width:100%;height:2px;background:#fff;transition:0.5s;}
-.navigation .toggle.active span::before{
-transform:rotate(225deg);
-top:24px;
-}
-nav .navigation .toggle.active span::after{
-transform:rotate(135deg);
-bottom:24px;
-}
-nav .navigation ul{
-position:relative;
-background:#daf;
-height:117px;
-width:auto;
-}
-nav .navigation ul li{
-list-style:none;
-}
-nav .navigation ul li a{position:relative;
-text-decoration:none;
-display:block;
-padding:10px 20px;
-height:50px;
-color:#fff;
-font-size:17px;
-transition:1s;
-}
+.navigation .toggle.active span::before{transform:rotate(225deg);top:24px;}
+nav .navigation .toggle.active span::after{transform:rotate(135deg);bottom:24px;}
+nav .navigation ul{position:relative;background:#daf;height:333px;width:auto;z-index:1000;}
+nav .navigation ul li{list-style:none;}
+nav .navigation ul li a{position:relative;text-decoration:none;display:block;padding:10px 20px;height:50px;color:#fff;font-size:17px;transition:1s;}
 nav .navigation ul li a:hover{left:0;transition:0s;background:#2196f3;}
-
-
 
 .navegacionMain{background:#2C3E50;position:fixed;display:block;height:66px;width:100vw;bottom:0;left:0;padding:0px 33px;align-items:center;overflow-y:hidden;}
 .navegacionMain .navegacionContenido{display:grid;grid-template-columns:auto auto auto auto auto;grid-template-rows:auto;grid-gap:17px;margin:0px auto;
@@ -200,7 +177,7 @@ transition:0.6s;
 align-items:center;
 align-content:center;
 }
-.prodCarAmz .buttonCarrAmz .btn_amz{
+.prodCarAmz .buttonCarrAmz #btn_amz{
 text-decoration:none;
 text-align:center;
 display:inline-block;
@@ -220,7 +197,7 @@ border-radius:3px;
 border:none;
 cursor:pointer;
 }
-.prodCarAmz:hover.btn_amz{
+.prodCarAmz:hover#btn_amz{
 margin:auto;
 text-align:center;
 padding:6px;
@@ -230,7 +207,7 @@ color:#fff;
 background:#e47911;
 box-shadow:inset 0 0 0 3px #3a7999;
 }
-.prodCarAmz .btn_amz:hover{
+.prodCarAmz #btn_amz:hover{
 padding:6px;
 font-size:19px;
 font-weight:300;
@@ -256,10 +233,11 @@ box-shadow:inset 0 0 0 3px #3a7999;
 .arts_de_interes .articulosI{display:grid;padding:8px;grid-template-columns:repeat(auto-fit,minmax(333px,1fr));grid-gap:17px;}
 .arts_de_interes .articulosI div{width:66px;height:66px;background:#daf;border-radius:50%;margin:0px auto;}
 .arts_de_interes .articulosI .articuloImg{width:100%;height:100%;}
+.arts_de_interes .articulosI img{width:100%;height:100%;border-radius:50%;}
 .contChats{min-height:66vh;height:auto;padding:3px 17px 33px;background:#34495E;display:block;position:relative;margin:0px;box-shadow:3px 8px 17px #daf inset;}
 .contChats h2{color:#fff;text-align:center;}
 .contChats .chats{display:flex;flex-direction:column;}
-.contChats .chats .chat{display:flex;flex-direction:flex;margin:8px 33px;}
+.contChats .chats .chat{display:flex;flex-direction:flex;margin:8px 33px;border-bottom:2px solid #daf}
 .contChats .chats .chat .usuarios{border-radius:50%;width:66px;height:66px;padding:8px;}
 .contChats .chats .chat span{padding:8px;font-size:.8em;font-weight:300;color:#fff;}
 
@@ -296,7 +274,7 @@ height:auto;
 .boxRGB{
 position:relative;
 width: 250px;
-height: 300px;
+height:333px;
 display:flex;
 justify-content: center;
 align-items: center;
@@ -366,6 +344,7 @@ right:10px;
 height: 90px;
 background: rgba(0,0,0,0.4);
 display: flex;
+flex-direction:column;
 justify-content: center;
 align-items: center;
 text-align: center;
@@ -377,13 +356,13 @@ opacity: 1;
 transition: 0.5s;
 }
 .boxRGB .contentRGB h2{
-font-size: 20px;
+font-size:1em;
 color: #fff;
 font-weight: 600;
 line-height: 20px;
 letter-spacing: 1px;
 }
-.boxRGB .contentRGB span{
+.boxRGB .contentRGB p{
 font-size: 15px;
 color: #fff;
 font-weight: 300;
@@ -553,11 +532,24 @@ letter-spacing: 2px;
 .publicaciones{display:flex;flex-direction:column;padding:16px;box-shadow:0px 0px 9px 9px #daf;}
 .publicaciones .publicacion{display:grid;grid-template-columns:99px auto;grid-template-rows:auto;border:1px solid #fad;margin:8px;}
 .publicaciones .publicacion .imgArticulo{margin:8px 33px;border-radius:50%;width:99px;height:99px;border:1px solid #fad;border:1px solid #fad;}
-.publicaciones .publicacion .imgArticulo img{width:100%;height:100%;}
+.publicaciones .publicacion .imgArticulo img{width:100%;height:100%;border-radius:50%;}
 .publicaciones .publicacion .detalles{display:flex;flex-direction:column;align-items:center;align-content:center;}
 .publicaciones .publicacion .detalles .usuarioOferta h2{padding:3px 17px;font-size:1em;font-weight:100;letter-spacing:2px;text-transform:capitalize;text-align:center;}
 .publicaciones .publicacion .detalles .usuarioOferta h2 img{border-radius:50%;width:25px;height:25px;border:1px solid #fad;}
 .publicaciones .publicacion .detalles .usuarioOferta h2 span{font-size:1.1em;font-weight:600;letter-spacing:3px;}
+
+
+#formaMP,#ofertar{background:#fff;overflow:scroll;z-index:100;width:666px;margin:66px 5%;height:500px;padding:17px;border-radius:8px;overflow-x:hidden;align-items:center;align-content:center;}
+#ofertar{background:#fff;z-index:100000;}
+.headerForm{display:flex;justify-content:space-between;align-items:center;margin-bottom:17px;}
+#formaMP span img{width:99px;height:99px;left:3px;top:8px;}
+#formaMP h1{top:1px;color:#415;font-family:Comic;font-size:1.1em;font-style:bold;font-weight:300;letter-spacing:3px;text-transform:uppercase;padding:8px;text-align:center;}
+#closeOferta{top:17px;font-size:2.5em;color:#040105;font-weight:900;font-family:arial;opacity:0.666;cursor:pointer;}
+.modal{display:none;position:fixed;z-index:1;left:0;top:0;width:666px;height:500px;overflow:auto;background:rgba(0,0,0,0.4);padding-top:60px;align-items:center;align-content:center;}
+.modal h2,
+.modal h1{font-size:1em;font-weight:300;letter-spacing:3px;text-align:center;width:99%;padding:33px 17px;border:1px solid #daf;margin:0 auto;}
+.modal h3{font-size:1em;font-weight:300;letter-spacing:3px;text-align:center;width:99%;margin:0 auto;}
+.modal-content{background:#fefefe;margin:5% auto 15%;border:1px solid #888;width:69%;}
 
 @media(max-width:768px){
 	.texto_car h1{font-size:35px;}

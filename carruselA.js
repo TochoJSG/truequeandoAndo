@@ -1,5 +1,12 @@
 const productosJson = [
-    {name: "Trailer ", imgMain:"publicaciones/art0.png", intereses: "acepta{dinero,maquinaria}", desc: "trailer 1995 en excelentes condicions",propietario:"Usuario A",condicion:"seminuevo"},
+    {name: "tractor Y", imgMain:"publicaciones/art18.png", intereses: "acepta{dinero, camioneta}", desc: "tractor medio uso",propietario:"Usuario E",condicion:"seminuevo"},
+    {name: "tractor X", imgMain:"publicaciones/art19.png", intereses: "acepta{Pickup, dinero, camion}", desc: "tractor recien afinado",propietario:"Usuario B",condicion:"seminuevo"},
+    {name: "naranjas", imgMain:"publicaciones/art20.jpg", intereses: "acepta{ dinero, tractor }", desc: "tonelada y media de naranjas",propietario:"Usuario F",condicion:"seminuevo"},
+    {name: "Manzanas", imgMain:"publicaciones/art21.jpg", intereses: "acepta{ montacargas, dinero, camioneta  }", desc: "3 toneladas de manzana",propietario:"Usuario A",condicion:"seminuevo"},
+    {name: "Montacargas", imgMain:"publicaciones/art22.jpg", intereses: "acepta{ auto, dinero, mercancia }", desc: "montacargas seminuevo carga mucho peso",propietario:"Usuario C",condicion:"seminuevo"},
+    {name: "Eq fumigacion", imgMain:"publicaciones/art23.jpg", intereses: "acepta{ semillas, dinero}", desc: "equipo de fumigacion",propietario:"Usuario B",condicion:"seminuevo"},
+    {name: "Semillas", imgMain:"publicaciones/art24.jpg", intereses: "acepta{ dinero }", desc: "semillas",propietario:"Usuario H",condicion:"seminuevo"},
+    {name: "Trailer ", imgMain:"publicaciones/art0.png", intereses: "acepta{dinero, maquinaria, inmuebles}", desc: "trailer 1995 en excelentes condicions",propietario:"Usuario A",condicion:"seminuevo"},
     {name: "Bocinas", imgMain:"publicaciones/art1.png", intereses: "acepta{maquinas de vending}", desc: "sistema de audio rofesional funcionando con 6 meses de uso",propietario:"Usuario B",condicion:"seminuevo"},
     {name: "Mole", imgMain:"publicaciones/art2.png", intereses: "acepta{Pickup, dinero}", desc: "camion de volteo listo ara trabajar",propietario:"Usuario D",condicion:"seminuevo"},
     {name: "pulidora", imgMain:"publicaciones/art3.png", intereses: "acepta{dinero,comutadora}", desc: "ulidora profesional",propietario:"Usuario A",condicion:"nuevo"},
@@ -25,13 +32,13 @@ productosJson.forEach(item=>{
 	<div class="prod_car">
 		<picture>
 			<div class="imgBx">
-			<img src="${item.imgMain}" alt="loading..."/>
+			<img src="${item.imgMain}" alt="loading..." />
 			</div>
 		</picture>
 		<div class="details_car">
 			<h2>${item.name}
 				</h2>
-			<p>${item.intereses}
+			<p><strong>${item.intereses}</strong>
 				</p>
 			<p>publicado por ${item.propietario}
 				</p>

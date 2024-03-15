@@ -8,10 +8,9 @@ productosJson.forEach(item=>{
 	</div>
 	<div class="contentRGB">
 		<h2>${item.name}</h2>
-		<p>publicado por ${item.propietario}</p>
 		<p>${item.intereses}</p>
 		<p>${item.desc}</p>
-		<a id="btnOfertar" type="button">Ofertar</a>
+		<a id="btnOfertar" class="btn btn-success" type="button">Ofertar</a>
 	</div>
 </div>`;
 });
